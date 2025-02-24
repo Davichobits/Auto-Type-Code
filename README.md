@@ -1,71 +1,78 @@
 # auto-type-code README
 
-This is the README for your extension "auto-type-code". After writing up a brief description, we recommend including the following sections.
+"Auto-Type-Code" is an extension for Visual Studio Code that allows you to type code automatically. 
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+This extension is useful for presntations, demos, and tutorials.
 
-For example if there is an image subfolder under your extension project workspace:
+You can select a code snippet and type it automatically.
 
-\!\[feature X\]\(images/feature-x.png\)
+![demo](./auto_type_demo.gif)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
-## Requirements
+## Contributing
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+We welcome contributions to the auto-type-code extension! Here are some guidelines to help you get started:
 
-## Extension Settings
+### Contributing Code
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. Fork the repository on GitHub.
+2. Create a new branch from `main` (e.g., `feature/my-new-feature`).
+3. Make your changes and commit them with clear and descriptive messages.
+4. Push your changes to your forked repository.
+5. Create a pull request to the `main` branch of the original repository.
 
-For example:
+### Running the Project and Testing
+To run the project and test the extension, follow these steps:
 
-This extension contributes the following settings:
+Prerequisites
+- Node.js
+- Visual Studio Code
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+Installation
+Clone the repository:
 
-## Known Issues
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+```
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Navigate to the project folder:
 
-## Release Notes
+```bash
+cd your-repo-name
+```
 
-Users appreciate release notes as you update your extension.
+Install the dependencies:
 
-### 1.0.0
+```bash
+npm install
+```
 
-Initial release of ...
+## Running the Extension
 
-### 1.0.1
+Open the project in Visual Studio Code:
 
-Fixed issue #.
+```bash
+code .
+```
 
-### 1.1.0
+Press `F5` or go to the Run and Debug section in VS Code and click Run Extension.
+- This will open a new VS Code window with the extension loaded.
 
-Added features X, Y, and Z.
+## Testing the Extension
+1. In the new VS Code window, open a file (e.g., a CSS file).
 
----
+2. Select a block of code (e.g., a CSS rule).
 
-## Following extension guidelines
+3. Right-click and choose the "Auto Type" option from the context menu.
+    - The extension will delete the selected code and rewrite it character by character, simulating real-time typing.
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+4. Observe the changes in the editor. The code will be rewritten inside the braces {}, and changes will be saved after each line.
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+## Debugging
+To debug the extension, set breakpoints in your code (e.g., in src/extension.ts).
 
-## Working with Markdown
+Use the Run and Debug panel in VS Code to start debugging.
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Check the Debug Console for logs and errors.
